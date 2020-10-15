@@ -68,7 +68,7 @@ After this, a resultant file is generated to store all the edges which contains 
 ### Data Visualization:
 Calling the function nx.Graph() will generate a undirected graph where self loops are allowed but multiple(parallel) edges are not. With this information, we apply the function add_edge_from to every tuple, creating the nodes and the edges connecting them.
 
-<img src="./Images/friendship_network.png">
+<img src="./Images/frienship_network.png">
 
 ### Networks Measures Calculation:
 
