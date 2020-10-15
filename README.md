@@ -85,4 +85,13 @@ To analyze the closeness centrality, we use heat map here we can see the yellow 
 
 <img src="./Architecture/closeness_centrality.png">
 
+## Conclusion ##
+This project helped us to learn different techniques to fetch data from a social media network through the use of APIs(in case of Twitter). Users on Twitter are generating about half billion tweets every day. Some of these tweets are available to researchers and developers through Twitter's public APIs. This data will be tweets extracted from the users. The fetched data will then be plotted as network using some of the libraries like NetworkX, Gephi or NodeXL. And performance of this network is analyzed using different network measures like Degree distribution, clustering coefficient and closeness centrality. Histograms against these measures are plotted and analyzed further.
 
+## References ##
+1.	https://programminghistorian.org/en/lessons/exploring-and-analyzing-network-data-with-python
+2.	https://aksakalli.github.io/2017/07/17/network-centrality-measures-and-their-visualization.html#closeness-centrality
+3.	https://networkx.github.io/documentation/stable/auto_examples/drawing/plot_degree_histogram.html
+4.	https://matplotlib.org/tutorials/colors/colormaps.html
+5.	https://neo4j.com/docs/graph-algorithms/current/labs-algorithms/closeness-centrality/#:~:text=Closeness%20centrality%20is%20a%20way,distances%20to%20all%20other%20nodes.
+6.	https://www.geeksforgeeks.org/python-api-friends-in-tweepy/
