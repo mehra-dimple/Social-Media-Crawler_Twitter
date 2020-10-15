@@ -24,7 +24,7 @@ Twitter provides the APIs to collect user information through the use of get/fri
 A user's social network on Twitter is a directed network. There are two types of connections between users: follower and friend.
 In the following figure, John follows Alice, therefore John is Alice's follower. Alice follows Peter, and Bob is a friend of Alice.
 
-<img src="./Architecture/user_social_network.png">
+<img src="./Images/user_social_network.png">
 In our project we only draw an edge when the two users are friends. Therefore, we just user
 undirected edges that represents friend
 
@@ -68,22 +68,24 @@ After this, a resultant file is generated to store all the edges which contains 
 ### Data Visualization:
 Calling the function nx.Graph() will generate a undirected graph where self loops are allowed but multiple(parallel) edges are not. With this information, we apply the function add_edge_from to every tuple, creating the nodes and the edges connecting them.
 
+<img src="./Images/friendship_network.png">
+
 ### Networks Measures Calculation:
 
 1.Degree Distribution Histogram:
 The degree distribution histogram has degree as x-axis and y-axis is the fraction of individuals with degree k. Looking at the histogram, we can see most nodes have zero degree distribution 
 
-<img src="./Architecture/degree_distribution.png">
+<img src="./Images/degree_distribution.png">
 
 2.Local Clustering Coefficient Histogram:
 We used NetworkX to retrieve clustering coefficient for each node and plot them in a histogram. From the histogram we can see highest coefficient clustering value is close to zero.
 
-<img src="./Architecture/clustering_coeff.png">
+<img src="./Images/clustering_coeff.png">
 
 3.Heat map for Closeness Centrality:
 To analyze the closeness centrality, we use heat map here we can see the yellow color has highest centrality and black has lower centrality.   
 
-<img src="./Architecture/closeness_centrality.png">
+<img src="./Images/closeness_centrality.png">
 
 ## Conclusion ##
 This project helped us to learn different techniques to fetch data from a social media network through the use of APIs(in case of Twitter). Users on Twitter are generating about half billion tweets every day. Some of these tweets are available to researchers and developers through Twitter's public APIs. This data will be tweets extracted from the users. The fetched data will then be plotted as network using some of the libraries like NetworkX, Gephi or NodeXL. And performance of this network is analyzed using different network measures like Degree distribution, clustering coefficient and closeness centrality. Histograms against these measures are plotted and analyzed further.
