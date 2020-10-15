@@ -28,7 +28,7 @@ In the following figure, John follows Alice, therefore John is Alice's follower.
 In our project we only draw an edge when the two users are friends. Therefore, we just user
 undirected edges that represents friend
 
-3. Data Visualization:
+### Data Visualization: ###
 For Data visualization, we used NetworkX, a Python package for the creation and study of the structure of complex networks, such as a social network. In Graph, nodes are represented as users and an edge between them represents a friendship between two users.
 
 Now you have your data as two Python lists: a list of nodes [u(i) and name(i)] and a list of edges [stored_edges(i)]. In NetworkX, you can put these two lists together into a single network object that understands how nodes and edges are related. This object is called a Graph, referring to one of the common terms for data organized as a network [n.b. it does not refer to any visual representation of the data. Graph here is used purely in a mathematical, network analysis sense.] First you must initialize a Graph object with the following command:
@@ -45,12 +45,11 @@ nx.draw_networkx(graph,pos=None,with_labels=True)
 plt.savefig(filename)
 
 
-Network Calculation Measures:
+### Network Calculation Measures: ###
 To explore some characteristics of Graph generated above we have implemented some network measures like Degree Distribution Histogram which is defined as the probability distribution of degree of each node over the whole network, Local Clustering Coefficient which measures transitivity at node level, it estimates how strongly neighbors of a node are themselves connected and Heat map for Closeness Centrality which helps in detecting nodes that are able to spread information very efficiently. The high closeness score means the node has the shorted distances to all other nodes.
 
-	Attached the respective plots in Results section.
 
-Issues faced while Implementation:
+### Issues faced while Implementation:###
 
 1. Fetching large amount of data: While extracting data through API, the system will take long time to collect information and if not handled carefully the system will goes to sleep mode(this can cause the API to get refreshed and earlier fetched data will get wasted). 
 That is why we have taken data for 200 users using API.
@@ -66,10 +65,10 @@ The following are snapshots of few user ID and its followee’s:
 Once the neighbors of Kangana, Gajendra and Adnan are segregated we look for friendship between neighbors and save them in a list. Followings are the snapshots of data with mutual friends.  
 After this, a resultant file is generated to store all the edges which contains screen names of user ID’s. We have attached the screen_names.txt text file in data folder with other data text files. Also, you can see the snapshot below for reference.
 
-Data Visualization:
+### Data Visualization:
 Calling the function nx.Graph() will generate a undirected graph where self loops are allowed but multiple(parallel) edges are not. With this information, we apply the function add_edge_from to every tuple, creating the nodes and the edges connecting them.
 
-Networks Measures Calculation:
+### Networks Measures Calculation:
 
 1.Degree Distribution Histogram:
 The degree distribution histogram has degree as x-axis and y-axis is the fraction of individuals with degree k. Looking at the histogram, we can see most nodes have zero degree distribution 
