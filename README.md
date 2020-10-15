@@ -49,7 +49,7 @@ plt.savefig(filename)
 To explore some characteristics of Graph generated above we have implemented some network measures like Degree Distribution Histogram which is defined as the probability distribution of degree of each node over the whole network, Local Clustering Coefficient which measures transitivity at node level, it estimates how strongly neighbors of a node are themselves connected and Heat map for Closeness Centrality which helps in detecting nodes that are able to spread information very efficiently. The high closeness score means the node has the shorted distances to all other nodes.
 
 
-### Issues faced while Implementation:###
+### Issues faced while Implementation: ###
 
 1. Fetching large amount of data: While extracting data through API, the system will take long time to collect information and if not handled carefully the system will goes to sleep mode(this can cause the API to get refreshed and earlier fetched data will get wasted). 
 That is why we have taken data for 200 users using API.
